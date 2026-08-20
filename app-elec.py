@@ -17,12 +17,12 @@ st.set_page_config(
 st.title("🗳️ منظومة إدارة مكاتب التصويت - قيادة أملن")
 st.subheader("الجماعات: أملن - تارسواط - تاسريرت (رؤساء المكاتب ونوابهم والأعضاء ونوابهم)")
 
-# -------------------------------------------------------------
-# مسارات الملفات الأساسية
-# -------------------------------------------------------------
-EXCEL_FILE = r'C:\Users\Moulay ABDOUH\Desktop\ELECTION_2026\Bureaux_de_Votes_Ammelne_2026_Modf_2026.xlsx'
-LOGISTICS_FILE = r'C:\Users\Moulay ABDOUH\Desktop\ELECTION_2026\logistics_data.xlsx'
-TRANSPORT_FILE = r'C:\Users\Moulay ABDOUH\Desktop\ELECTION_2026\transport_data.xlsx'
+# =============================================================
+# 2. مسارات الملفات (مسارات نسبية تعمل على السيرفر السحابي)
+# =============================================================
+EXCEL_FILE = 'Bureaux_de_Votes_Ammelne_2026_Modf_2026.xlsx'
+LOGISTICS_FILE = 'logistics_data.xlsx'
+TRANSPORT_FILE = 'transport_data.xlsx'
 
 # -------------------------------------------------------------
 # بيانات الأعوان المكلفين المباشرة (جماعة أملن وجماعة تاسريرت)
