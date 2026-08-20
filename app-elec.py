@@ -796,7 +796,11 @@ with tab5:
 
     st.markdown("<br>", unsafe_allow_html=True)
 
+# السطر الآمن بدلاً من السطر القديم
+if not df_offices.empty and "commune" in df_offices.columns and "num" in df_offices.columns:
     info_row = df_offices[(df_offices["commune"] == card_commune) & (df_offices["num"].astype(str) == str(card_office_num))]
+else:
+    info_row = pd.DataFrame()
     address_val = info_row.iloc[0]["address"] if not info_row.empty and "address" in info_row.columns else "-"
     center_val = info_row.iloc[0]["center_name"] if not info_row.empty and "center_name" in info_row.columns else "-"
 
